@@ -1,3 +1,7 @@
+'''
+WIP-program for generating recipe lists for end product orders in the open-world factory building game "Satisfactory"
+'''
+
 def main():
     #filtest()
     items = loaditems("satisfactorygiga.txt")
