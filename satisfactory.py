@@ -1,5 +1,5 @@
 '''
-WIP-program for generating recipe lists for end product orders in the open-world factory building game "Satisfactory"
+WIP-program for generating recipe lists for end product orders in the open-world factory building game "Satisfactory" (2022)
 '''
 
 def main():
