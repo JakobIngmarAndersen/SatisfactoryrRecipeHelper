@@ -1,0 +1,88 @@
+ironingot refinery 65 35 ironore 20 water
+ironplate constructor 20 30 ironingot
+ironrod constructor 15 15 ironingot
+ironrod constructor 48 12 steelingot
+copperingot refinery 37.5 15 copperore 10 water
+wire constructor 30 15 copperingot
+wire constructor 120 15 cateriumingot
+cable constructor 30 60 wire
+cable assembler 100 45 wire 30 rubber
+screw constructor 40 10 ironrod
+screw constructor 50 12.5 ironingot
+reinforcedironplate assembler 5 30 ironplate 60 screw
+reinforcedironplate assembler 5.625 18.75 ironplate 37.5 wire
+coppersheet refinery 22.5 22.5 copperingot 22.5 water
+rotor assembler 4 20 ironrod 100 screw
+rotor assembler 5 10 steelpipe 30 wire
+rotor assembler 11.25 22.5 coppersheet 195 screw
+cateriumingot refinery 12 24 cateriumore 24 water
+modularframe assembler 2 3 reinforcedironplate 12 ironrod
+modularframe assembler 3 2 reinforcedironplate 10 steelpipe
+modularframe assembler 5 7.5 reinforcedironplate 140 screw
+smartplating assembler 2 2 reinforcedironplate 2 rotor
+fabric refinery 30 30 polymerresin 30 water
+silica constructor 37.5 22.5 rawquartz
+steelingot foundry 60 40 ironingot 40 coal
+steelbeam constructor 15 60 steelingot
+steelpipe constructor 20 30 steelingot
+versatileframework assembler 5 2.5 modularframe 30 steelbeam
+encasedindustrialbeam assembler 6 24 steelbeam 30 concrete
+stator assembler 5 15 steelpipe 40 wire
+stator assembler 8 16 steelpipe 60 quickwire
+motor assembler 5 10 rotor 10 stator
+motor manufacturer 7.5 3.75 rotor 3.75 stator 1.25 crystaloscillator
+automatedwiring assembler 2.5 2.5 stator 50 cable
+heavymodularframe manufacturer 2 10 modularframe 30 steelpipe 10 encasedindustrialbeam 200 screw
+heavymodularframe manufacturer 2.8125 7.5 modularframe 33.75 steelpipe 9.375 encasedindustrialbeam 20.625 concrete
+quartzcrystal constructor 22.5 37.5 rawquartz
+crystaloscillator manufacturer 1 18 quartzcrystal 14 cable 2.5 reinforcedironplate
+crystaloscillator manufacturer 1.875 18.75 quartzcrystal 13.125 rubber 1.875 ailimiter
+blackpowder assembler 30 15 coal 15 sulfur
+nobelisk assembler 10 20 blackpowder 20 steelpipe
+quickwire constructor 60 12 cateriumingot
+ailimiter assembler 5 25 coppersheet 100 quickwire
+ironrebar constructor 15 15 ironrod
+stunrebar assembler 10 10 ironrebar 50 quickwire
+circuitboard assembler 7.5 15 coppersheet 30 plastic
+circuitboard assembler 5 30 rubber 45 petroleumcoke
+circuitboard assembler 12.5 27.5 coppersheet 27.5 silica
+highspeedconnector manufacturer 3.75 210 quickwire 37.5 cable 3.75 circuitboard
+highspeedconnector manufacturer 3 90 quickwire 37.5 silica 3 circuitboard
+smokelesspowder refinery 20 20 blackpowder 10 heavyoilresidue
+computer manufacturer 2.5 25 circuitboard 22.5 cable 45 plastic 130 screw
+computer manufacturer 3.75 26.25 circuitboard 105 quickwire 45 rubber
+modularengine manufacturer 1 2 motor 15 rubber 2 smartplating
+adaptivecontrolunit manufacturer 1 7.5 automatedwiring 5 circuitboard 1 heavymodularframe 1 computer
+gasfilter manufacturer 7.5 37.5 coal 15 rubber 15 fabric
+supercomputer manufacturer 1.875 3.75 computer 3.75 ailimiter 5.625 highspeedconnector 52.5 plastic
+supercomputer manufacturer 2.4 3.6 computer 2.4 electromagneticcontrolrod 24 battery 54 wire
+supercomputer assembler 3 9 radiocontrolunit 9 coolingsystem
+rifleammo assembler 75 15 coppersheet 10 smokelesspowder
+encaseduraniumcell blender 25 50 uranium 15 concrete 40 sulfuricacid yes 10 sulfuricacid
+sulfuricacid refinery 50 50 sulfur 50 water
+electromagneticcontrolrod assembler 4 6 stator 4 ailimiter
+uraniumfuelrod manufacturer 0.4 20 encaseduraniumcell 1.2 encasedindustrialbeam 5 electromagneticcontrolrod
+magneticfieldgenerator manufacturer 1 2.5 versatileframework 1 electromagneticcontrolrod 5 battery
+aluminasolution refinery 240 200 bauxite 200 water
+aluminumscrap refinery 360 240 aluminasolution 120 coal
+aluminumingot foundry 60 90 aluminumscrap 75 silica
+alcladaluminumsheet assembler 30 30 aluminumingot 10 copperingot
+aluminumcasing constructor 60 90 aluminumingot
+aluminumcasing assembler 112.5 150 aluminumingot 75 copperingot
+radiocontrolunit manufacturer 2.5 40 aluminumcasing 1.25 crystaloscillator 1 computer
+iodineinfusedfilter manufacturer 3.75 3.75 gasfilter 30 quickwire 3.75 aluminumcasing
+battery blender 20 50 sulfuricacid 40 aluminasolution 20 aluminumcasing yes 30 water
+assemblydirectorsystem assembler 0.75 1.5 adaptivecontrolunit 0.75 supercomputer
+heatsink assembler 7.5 37.5 alcladaluminumsheet 22.5 coppersheet
+coolingsystem blender 6 12 heatsink 12 rubber 30 water 150 nitrogengas
+fusedmodularframe blender 1.5 1.5 heavymodularframe 75 aluminumcasing 37.5 nitrogengas
+turbomotor manufacturer 1.875 7.5 coolingsystem 3.75 radiocontrolunit 7.5 motor 45 rubber
+thermalpropulsionrocket manufacturer 1 2.5 modularengine 1 turbomotor 3 coolingsystem 1 fusedmodularframe
+nitricacid blender 30 120 nitrogengas 30 water 10 ironplate
+nonfissileuranium blender 50 37.5 uraniumwaste 25 silica 15 nitricacid 15 sulfuricacid yes 15 water
+plutoniumpellet particleaccelerator 30 100 nonfissileuranium 25 uraniumwaste
+encasedplutoniumcell assembler 5 10 plutoniumpellet 20 concrete
+plutoniumfuelrod manufacturer 0.25 7.5 encasedplutoniumcell 4.5 steelbeam 1.5 electromagneticrod 2.5 heatsink
+copperpowder constructor 50 300 copperingot
+pressureconversioncube assembler 1 1 fusedmodularframe 2 radiocontrolunit
+nuclearpasta particleaccelerator 0.5 100 copperpowder 0.5 pressureconversioncube

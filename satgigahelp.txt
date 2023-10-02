@@ -1,0 +1,88 @@
+0 ironingot
+1 ironplate
+2 ironrod
+3 copperingot
+4 wire
+5 cable
+6 screw
+7 reinforcedironplate
+8 coppersheet
+9 rotor
+10 cateriumingot
+11 modularframe
+12 smartplating
+13 fabric
+14 silica
+15 steelingot
+16 steelbeam
+17 steelpipe
+18 versatileframework
+19 encasedindustrialbeam
+20 stator
+21 motor
+22 automatedwiring
+23 heavymodularframe
+24 quartzcrystal
+25 crystaloscillator
+26 blackpowder
+27 nobelisk
+28 quickwire
+29 ailimiter
+30 ironrebar
+31 stunrebar
+32 circuitboard
+33 highspeedconnector
+34 smokelesspowder
+35 computer
+36 modularengine
+37 adaptivecontrolunit
+38 gasfilter
+39 supercomputer
+40 rifleammo
+41 encaseduraniumcell
+42 sulfuricacid
+43 electromagneticcontrolrod
+44 uraniumfuelrod
+45 magneticfieldgenerator
+46 aluminasolution
+47 aluminumscrap
+48 aluminumingot
+49 alcladaluminumsheet
+50 aluminumcasing
+51 radiocontrolunit
+52 iodineinfusedfilter
+53 battery
+54 assemblydirectorsystem
+55 heatsink
+56 coolingsystem
+57 fusedmodularframe
+58 turbomotor
+59 thermalpropulsionrocket
+60 nitricacid
+61 nonfissileuranium
+62 plutoniumpellet
+63 encasedplutoniumcell
+64 plutoniumfuelrod
+65 copperpowder
+66 pressureconversioncube
+67 nuclearpasta
+
+
+
+
+ironingot smelter 30 30 ironore
+copperingot smelter 30 30 copperore
+concrete constructor 15 45 limestone
+concrete assembler 45 50 limestone 10 rubber
+coppersheet constructor 10 20 copperingot
+cateriumingot smelter 15 45 cateriumore
+plastic refinery 20 30 crudeoil yes 10 heavyoilresidue
+plastic refinery 20 60 polymerresin 20 water
+plastic refinery 60 30 rubber 30 fuel
+rubber refinery 20 30 crudeoil yes 20 heavyoilresidue
+rubber refinery 20 40 polymerresin 40 water
+fuel refinery 40 60 crudeoil yes 30 polymerresin
+fuel refinery 40 60 heavyoilresidue
+polymerresin refinery 130 60 crudeoil yes 20 heavyoilresidue
+petroleumcoke refinery 120 40 heavyoilresidue
+steelingot foundry 100 75 ironore 75 petroleumcoke
